@@ -11,3 +11,22 @@ body .headerfooter {
     background-color: rgb(11, 3, 27);;
 
 }
+
+
+
+.jorgefoto {
+
+    
+
+
+}
+
+
+.texto {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
