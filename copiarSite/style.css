@@ -1,0 +1,138 @@
+body {
+
+    background-color: black;
+
+}
+
+
+
+.teste1{
+
+
+    background-color: aqua;
+
+}
+
+.teste2{
+
+
+    background-color: rgb(71, 207, 38);
+
+}
+
+.teste3{
+
+
+    background-color: rgb(255, 217, 0);
+
+}
+
+
+.nominho {
+
+
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+
+}
+
+.nominho img{
+
+
+    margin: 15px;
+}
+
+.nominho h6 {
+
+
+    margin-top: 25px;
+
+
+}
+
+
+.cardhashtags {
+
+
+    display: flex;
+    justify-content: flex-start;
+    color: #b2b2ae;
+    font-size: 16px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.card {
+
+    margin-top: 25px;
+    background-color: rgb(40,36,36);
+    
+}
+
+
+.iconinhos {
+
+    display: flex;
+    flex-direction: row;
+
+}
+.iconinhos img {
+
+    width: 70px;
+
+
+}
+
+
+.teste4 {
+
+    padding-top: 14px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+
+}
+
+
+.searchbarinha {
+
+    background-color:aqua
+
+
+}
+
+
+.testetumblr {
+
+
+    box-sizing: border-box;
+    background-color: #b2b2ae;
+    border-radius: 8px;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    margin-bottom: 16px;
+    padding: 15px 5px;
+    display: flex;
+    position: relative;
+
+}
+
+
+.topbar {
+
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+
+.a12i9873 {
+
+    margin-right: 10px;
+    padding-right: 10px;
+
+
+}
