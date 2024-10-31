@@ -7,7 +7,9 @@
     <title>Pokedex</title>
 </head>
 <body>
-    
+
+        <img id="backgroundimage" src="imgs/d9spuwer2c491.webp" alt="">
+       
     <main>
         <div class="container">
             <figure>
@@ -27,14 +29,17 @@
                 
             </h1>
             <h2 class="pokemon-data2">
-                <div>Tipo:
-                    <span>a</span>
-                    <span>a</span>
+                <div id="typePokemon">Tipo:
+                    <span id="type0"></span>
+                    <span id="type1"></span>
+                    
                 </div>
-                <div>Peso:
-                    <span>teste</span>
+                <div id="weightPokemon">Peso:
+                    <span id="weightPoke"></span>
                 </div>
-                <div>Altura:</div>
+                <div id="heightPokemon">Altura:
+                    <span id="heightPoke"></span>
+                </div>
             </h2>
             <div class="buttons">
                 <button id="btnPrevious">Previous</button>
@@ -44,7 +49,9 @@
         </div>
     </main>
 
-
+    <audio id="cry_audio" controls preload="none">
+        <source src="" type="audio/ogg">
+    </audio>
 
 
     <script src="js/script.js"></script>

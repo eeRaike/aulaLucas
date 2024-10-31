@@ -20,7 +20,6 @@ body {
 
     background-color: grey;
 
-
 }
 
 main{
@@ -54,9 +53,9 @@ main{
 #imgPokemon {
     position: absolute; 
     width: 50%;
-    max-width: 100px;
-    top: 33%;
-    right: 43.5%;
+    max-width: 130px;
+    top: 32%;
+    right: 40%;
     
 }
 
@@ -82,7 +81,7 @@ main{
 
     position:absolute;
     top: 55.5%;
-    left: 17%;
+    left: 26%;
 
 }
 
@@ -113,3 +112,14 @@ main{
     box-shadow:  -3px 4px 0 #990900;
 
 }
+
+
+#backgroundimage{
+
+
+    position: absolute;
+    width: 100%;
+
+}
+
+
