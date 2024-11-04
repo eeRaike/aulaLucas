@@ -75,11 +75,12 @@ body {
 
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
 }
 .iconinhos img {
 
-    width: 70px;
+    width: 30px;
 
 
 }
@@ -95,10 +96,10 @@ body {
 }
 
 
-.searchbarinha {
+.asgh7ui{
 
-    background-color:aqua
-
+    text-decoration: none;
+    color:white;
 
 }
 
@@ -107,15 +108,22 @@ body {
 
 
     box-sizing: border-box;
-    background-color: #b2b2ae;
+    background-color: rgb(40,36,36);
     border-radius: 8px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     min-height: 100px;
     margin-bottom: 16px;
     padding: 15px 5px;
     display: flex;
     position: relative;
+
+}
+
+.testetumblr div{
+
+    padding-right: 10px;
+
 
 }
 
@@ -133,6 +141,27 @@ body {
 
     margin-right: 10px;
     padding-right: 10px;
+
+
+}
+
+#testeiasdnasidans {
+
+
+    display: flex;
+    flex-direction: row;
+
+
+
+}
+
+.post-text{
+
+    display: flex;
+    justify-content: start;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    color: white;
 
 
 }

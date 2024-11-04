@@ -3,15 +3,17 @@ const nomePokemon = document.querySelector("#nomePokemon");
 const numeroPokemon  = document.querySelector("#idPokemon");
 const inputText = document.querySelector("#inputText");
 const form = document.querySelector("#form-busca")
-const buttonA = document.querySelector("#btnPrevious")
-const buttonB = document.querySelector("#btnNext")
+const buttonPrev = document.querySelector("#btnPrevious")
+const buttonNext = document.querySelector("#btnNext")
 const typePokemon = document.querySelector("#typePokemon")
 const weightPokemon = document.querySelector("#weightPokemon")
 const heightPokemon = document.querySelector("#heightPokemon")
 const cryAudio = document.querySelector("#cry_audio")
 const background = document.querySelector("#backgroundimage")
+const backgroundMusic = document.querySelector("#backgroundmusic")
 
 let idPokemon = 1;
+let bgnum = false;
 
 const fetchPokemon = async (pokemon) => {
 
@@ -25,6 +27,7 @@ const fetchPokemon = async (pokemon) => {
 
 const showPokemon = async (pokemon) => {
 
+    bgnum = true;
 
     if (pokemon === "missingno." || pokemon < 1) {
         console.log("teste");
@@ -34,7 +37,10 @@ const showPokemon = async (pokemon) => {
         nomePokemon.innerHTML = "MissingNo."
         imgPokemon.src = "imgs/Missingno_image.webp"
         background.src = "imgs/lavender.gif"
-        cryAudio.src = pokemonData.cries.latest
+        cryAudio.src = "audio/missignoCry.ogg"
+        backgroundMusic.src = "audio/lavender-town.ogg"
+        
+        
         const typeText = document.getElementById(`type0`)
         typeText.textContent = " "
         for (let i = 0; i < 3; i++) {
@@ -94,12 +100,10 @@ const showPokemon = async (pokemon) => {
 
     cryAudio.play();
 
-
     }
 
     
 }
-
 
 
 inputText.addEventListener('input', () => 
@@ -112,5 +116,25 @@ form.addEventListener('submit', (event) => {
 
 })
 
+buttonPrev.addEventListener('click' , () => {
+
+    idPokemon --;
+    showPokemon(idPokemon);
+
+
+})
+
+buttonNext.addEventListener('click' , () => {
+
+    idPokemon ++;
+    showPokemon(idPokemon);
+
+
+})
+
+
 showPokemon(idPokemon);
+
+
+
 
