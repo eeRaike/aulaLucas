@@ -69,7 +69,7 @@ const showPokemon = async (pokemon) => {
     idPokemon = pokemonData.id
     numeroPokemon.innerHTML = idPokemon
     nomePokemon.innerHTML = pokemonData.name
-    imgPokemon.src = pokemonData.sprites.front_default //.versions.generation-v.black-white.animated
+    imgPokemon.src = pokemonData.sprites.front_default //.versions['generation-v']['black-white'].animated.
     background.src = "imgs/d9spuwer2c491.webp"
     cryAudio.src = pokemonData.cries.latest
     for (let i = 0; i < pokemonData.types.length; i++) {
@@ -89,11 +89,13 @@ const showPokemon = async (pokemon) => {
         
     }
     const text = document.getElementById("heightPoke");
-    text.textContent = " " + pokemonData.height
+    const alturaConvert = pokemonData.height / 10
+    text.textContent = " " + alturaConvert + "m"
     heightPokemon.appendChild(text)
 
     const text1 = document.getElementById("weightPoke");
-    text1.textContent = " " + pokemonData.weight
+    const pesoConvert = pokemonData.weight / 10
+    text1.textContent = " " + pesoConvert + "kg"
     weightPokemon.appendChild(text1)
 
     

@@ -53,9 +53,9 @@ main{
 #imgPokemon {
     position: absolute; 
     width: 50%;
-    max-width: 130px;
+    max-width: 160px;
     top: 32%;
-    right: 40%;
+    right: 35%;
     
 }
 
